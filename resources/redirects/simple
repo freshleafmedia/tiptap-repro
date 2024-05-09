@@ -1,0 +1,5 @@
+# Simple redirect list
+# - From links are case insensitive, to links are case sensitive
+# - These are permanent redirects (HTTP 301)
+# Example:
+# /redirect/from /redirect/to
