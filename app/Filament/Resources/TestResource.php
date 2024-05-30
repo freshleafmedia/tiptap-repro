@@ -2,7 +2,7 @@
 
 namespace App\Filament\Resources;
 
-use App\Blocks\TestBlock;
+use App\Blocks\SideBySideBlock;
 use App\Filament\Resources\TestResource\Pages;
 use App\Filament\Resources\TestResource\RelationManagers;
 use App\Models\Test;
@@ -29,7 +29,7 @@ class TestResource extends Resource
                 TiptapEditor::make('content')
                     ->profile('default')
                     ->blocks([
-                        TestBlock::class,
+                        SideBySideBlock::class,
                     ]),
             ]);
     }
