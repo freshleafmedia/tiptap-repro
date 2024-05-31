@@ -26,4 +26,9 @@ class SideBySideBlock extends TiptapBlock
                 ]),
         ];
     }
+
+    public function getPreview(?array $data = [], ?\Filament\Forms\Components\Component $component = null): string
+    {
+        return var_export($component->getStatePath(), true) . PHP_EOL . var_export($data, true);
+    }
 }
